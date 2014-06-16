@@ -18,7 +18,6 @@ angular.module('techNewsAggregatorApp').service('FeedService', ['$http', '$q',
                     callback: 'JSON_CALLBACK'
                 }
             }).then(function(data) {
-                console.log(data);
                 return data;
             }).
             catch (function(err) {

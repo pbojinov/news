@@ -27,6 +27,6 @@ angular.module('techNewsAggregatorApp').service('FeedManager', [
 
         return {
             getFeeds: getFeeds
-        }
+        };
     }
 ]);
