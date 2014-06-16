@@ -1,11 +1,11 @@
-<div class="pure-g">
+<div class="pure-g content">
 
     <div class="feeds pure-u-1-{{feeds.length + 1}}" ng-repeat='feed in feeds'>
 
-        <div class="header">{{ feed.title }}</div>
-        <div class="articles" ng-repeat='entry in feed.entries'>
+        <div class="article headers">{{ feed.title }}</div>
+        <div class="article" ng-repeat='entry in feed.entries'>
             <div class="title"> {{ entry.title }} </div>
-            <div class="published"> {{ entry.publishedDate }} </div>
+            <div class="published"> {{ entry.publishedDate | checkmark }} </div>
         </div>
     </div>
     <!--end feeds-->

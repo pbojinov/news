@@ -1,7 +1,7 @@
 /* Space out content a bit */
  body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: 0;
+    padding: 0;
 }
 /* Everything but the jumbotron gets side spacing for mobile first views */
  .header, .marketing, .footer {
@@ -12,7 +12,6 @@
  .header {
     background-color: white;
 }
-
 /* Make the masthead heading the same height as the navigation */
  .header h3 {
     margin-top: 0;
@@ -20,11 +19,18 @@
     line-height: 40px;
     padding-bottom: 19px;
 }
-
-.container {
-  background-color: #ECF0F1;
+/* Feed content */
+ .content {
+    background-color: #ECF0F1;
+    padding-top: 10px;
 }
-
+.article.headers {
+    color: blue;
+}
+.article {
+    background-color: white;
+    margin: 10px;
+}
 /* Custom page footer */
  .footer {
     padding-top: 19px;
