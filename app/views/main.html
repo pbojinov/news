@@ -2,12 +2,12 @@
 
     <div class="feeds pure-u-1-{{feeds.length }} repeat-item" ng-repeat='feed in feeds'>
 
-        <a ng-href='{{ feed.link }}' class="article headers">
+        <a target="_blank" ng-href='{{ feed.link }}' class="article headers">
             <!-- <span class="octicon octicon-home"></span> --> 
             <span >{{ feed.title }}</span>&nbsp;<span class="octicon octicon-link-external"></span>
         </a>
         <div class="article" ng-repeat='entry in feed.entries'>
-            <a ng-href='{{ entry.link }}'>
+            <a target="_blank" ng-href='{{ entry.link }}'>
                 <span class="title"> {{ entry.title }} </span>
                 <span class="published"> {{ entry.publishedDate | lastModified }} </span>
             </a>
