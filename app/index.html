@@ -10,6 +10,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/purecss/build/pure.css" />
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -27,11 +28,18 @@
 
 
       <div class="header">
-        <h3 class="text-muted">Tech News Aggregator</h3>
+        <h3 class="text-muted"><span class="mega-octicon octicon-ruby"></span> &nbsp;The News</h3>
       </div>
 
       <div ng-view="">
           <!-- all the dynamic stuff goes here -->
+      </div>
+
+      <div class="footer">
+      <div class="credits repeat-item">
+        Made with <span class="octicon octicon-heart"></span> by <span class="octicon octicon-squirrel"></span>
+      </div>
+        
       </div>
 
     </div>

@@ -13,7 +13,8 @@
     "angular-route": "1.2.16",
     "purecss": "~0.5.0",
     "angular-relative": "*",
-    "normalize-css": "~3.0.1"
+    "normalize-css": "~3.0.1",
+    "octicons": "~2.0.1"
   },
   "devDependencies": {
     "angular-mocks": "1.2.16",

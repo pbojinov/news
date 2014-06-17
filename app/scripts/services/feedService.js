@@ -7,7 +7,7 @@ angular.module('techNewsAggregatorApp').service('FeedService', ['$http', '$q',
          * Using Google Feed API
          */
         
-        var googleFeedApi = 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10';
+        var googleFeedApi = 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0';
 
         function getFeed(rssUrl) {
             return $http({
@@ -15,7 +15,8 @@ angular.module('techNewsAggregatorApp').service('FeedService', ['$http', '$q',
                 url: googleFeedApi,
                 params: {
                     q: rssUrl,
-                    callback: 'JSON_CALLBACK'
+                    callback: 'JSON_CALLBACK',
+                    num: 30
                 }
             }).then(function(data) {
                 return data;
