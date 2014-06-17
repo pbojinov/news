@@ -32,6 +32,14 @@
     margin: 10px;
     padding: 10px;
 }
+.article a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+}
+.article a:visited {
+    color: #ccc;
+}
 .article:not(:first-child) {
     cursor: pointer;
     color: #444;
@@ -39,11 +47,12 @@
 .article:not(:first-child):hover {
     background-color: #FBFCFC;
 }
-.article:not(:first-child).active {
-    color: #ccc;
+.title {
+    display: block;
 }
 .published {
     font-size: 10px;
+    display: block;
 }
 /* Custom page footer */
  .footer {

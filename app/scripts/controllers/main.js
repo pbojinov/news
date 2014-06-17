@@ -37,12 +37,6 @@ angular.module('techNewsAggregatorApp').controller('MainCtrl', ['$scope', '$wind
             });
         };
 
-        $scope.navigate = function(url, event) {
-            var element = angular.element(event.srcElement).parent();
-            element.addClass('active');
-            $window.open(url);
-        };
-
         $scope.loadFeeds();
     }
 ]);
