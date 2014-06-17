@@ -8,7 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/purecss/build/pure.css" />
+    <!-- <link rel="stylesheet" href="bower_components/purecss/build/pure.css" /> -->
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css" />
     <!-- endbower -->
@@ -16,6 +16,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/animation.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pure.css">
     <!-- endbuild -->
   </head>
   <body ng-app="techNewsAggregatorApp">
@@ -70,7 +71,6 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-relative/relativeDate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -80,6 +80,7 @@
         <script src="scripts/services/feedService.js"></script>
         <script src="scripts/services/feedManager.js"></script>
         <script src="scripts/filters/filters.js"></script>
+        <script src="scripts/filters/relativeDate.js"></script>
         <!-- endbuild -->
 </body>
 </html>
