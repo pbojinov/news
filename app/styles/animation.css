@@ -1,0 +1,35 @@
+/* ngRepeat */
+.repeat-item.ng-enter,
+.repeat-item.ng-leave {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+
+.repeat-item.ng-enter,
+.repeat-item.ng-leave.ng-leave-active {
+  opacity:0;
+}
+.repeat-item.ng-leave,
+.repeat-item.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+/* ngShow */
+/* you can use natural CSS transitions just
+   as you would without using ngAnimate */
+.show-item {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+  opacity:1;
+}
+
+.show-item.ng-hide {
+  opacity:0;
+}
+
+.show-item.ng-hide-add, .show-item.ng-hide-remove {
+  /* this needs to be here to make it visible during the animation
+     since the .ng-hide class is already on the element rendering
+     it as hidden. */
+  display:inline-block!important;
+}

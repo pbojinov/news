@@ -11,12 +11,15 @@
 /* Custom page header */
  .header {
     background-color: white;
+    padding: 5px 0 5px 18px;
 }
 /* Make the masthead heading the same height as the navigation */
  .header h3 {
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 40px;
+    line-height: 30px;
+    font-weight: 100;
+    color: bold;
 }
 /* Feed content */
  .content {
@@ -24,13 +27,18 @@
     padding-top: 10px;
 }
 .article.headers {
-    color: blue;
     text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
 }
 .article {
     background-color: white;
     margin: 10px;
     padding: 10px;
+    -webkit-transition: opacity 0.3s ease-out 0s;
+    transition: opacity 0.3s ease-out 0s;
 }
 .article a {
     display: block;
@@ -45,7 +53,7 @@
     color: #444;
 }
 .article:not(:first-child):hover {
-    background-color: #FBFCFC;
+    background-color: #fbfcfc;
 }
 .title {
     display: block;

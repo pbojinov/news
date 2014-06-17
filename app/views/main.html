@@ -1,18 +1,21 @@
 <div class="pure-g content">
 
-    <div class="feeds pure-u-1-{{feeds.length + 1}}" ng-repeat='feed in feeds'>
+    <div class="feeds pure-u-1-{{feeds.length }} repeat-item" ng-repeat='feed in feeds'>
 
-        <div class="article headers">{{ feed.title }}</div>
+        <a ng-href='{{ feed.link }}' class="article headers">
+            <span >{{ feed.title }}</span>
+        </a>
         <div class="article" ng-repeat='entry in feed.entries'>
             <a ng-href='{{ entry.link }}'>
                 <span class="title"> {{ entry.title }} </span>
                 <span class="published"> {{ entry.publishedDate | lastModified }} </span>
             </a>
+
         </div>
     </div>
     <!--end feeds-->
 
-    <div class="default-item pure-u-1-{{feeds.length + 1}}"></div>
+    <div class="default-item pure-u-1-{{feeds.length}}"></div>
     <!--add new feed item-->
 
 </div>
