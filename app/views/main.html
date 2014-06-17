@@ -3,9 +3,9 @@
     <div class="feeds pure-u-1-{{feeds.length + 1}}" ng-repeat='feed in feeds'>
 
         <div class="article headers">{{ feed.title }}</div>
-        <div class="article" ng-repeat='entry in feed.entries'>
+        <div class="article" ng-repeat='entry in feed.entries' ng-click='navigate(entry.link, $event)'>
             <div class="title"> {{ entry.title }} </div>
-            <div class="published"> {{ entry.publishedDate | checkmark }} </div>
+            <div class="published"> {{ entry.publishedDate | lastModified }} </div>
         </div>
     </div>
     <!--end feeds-->

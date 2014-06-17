@@ -17,7 +17,6 @@
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
-    padding-bottom: 19px;
 }
 /* Feed content */
  .content {
@@ -26,10 +25,25 @@
 }
 .article.headers {
     color: blue;
+    text-transform: uppercase;
 }
 .article {
     background-color: white;
     margin: 10px;
+    padding: 10px;
+}
+.article:not(:first-child) {
+    cursor: pointer;
+    color: #444;
+}
+.article:not(:first-child):hover {
+    background-color: #FBFCFC;
+}
+.article:not(:first-child).active {
+    color: #ccc;
+}
+.published {
+    font-size: 10px;
 }
 /* Custom page footer */
  .footer {

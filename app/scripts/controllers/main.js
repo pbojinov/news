@@ -7,8 +7,8 @@
  * # MainCtrl
  * Controller of the techNewsAggregatorApp
  */
-angular.module('techNewsAggregatorApp').controller('MainCtrl', ['$scope', 'FeedManager', 'FeedService',
-    function($scope, FeedManager, FeedService) {
+angular.module('techNewsAggregatorApp').controller('MainCtrl', ['$scope', '$window', 'FeedManager', 'FeedService',
+    function($scope, $window, FeedManager, FeedService) {
 
     	$scope.feeds = [];
 
@@ -35,6 +35,12 @@ angular.module('techNewsAggregatorApp').controller('MainCtrl', ['$scope', 'FeedM
                     $scope.error = err;
                 });
             });
+        };
+
+        $scope.navigate = function(url, event) {
+            var element = angular.element(event.srcElement).parent();
+            element.addClass('active');
+            $window.open(url);
         };
 
         $scope.loadFeeds();

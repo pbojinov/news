@@ -7,10 +7,11 @@
  * # formats the date to show, last modified since...
  * Last modified since date filter
  */
-angular.module('techNewsAggregatorApp').filter('checkmark', [
-    function() {
+angular.module('techNewsAggregatorApp').filter('lastModified', ['$q', 'relativeDate',
+    function($q, relativeDate) {
         return function(input) {
-            return input ? '\u2713' : '\u2718';
+            var input = relativeDate.set(input);
+            return input;
         };
     }
 ]);
